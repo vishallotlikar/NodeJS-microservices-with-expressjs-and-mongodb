@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "bf22b413-4084-4af1-b2ed-483a623f95ea",
+		"name": "NodeJs microservices with mongodb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add a new book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"Vishal's first book\",\n\t\"author\": \"Vishal\",\n\t\"numberPages\": 400,\n\t\"publisher\": \"Lotlikar\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4545/book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4545",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
